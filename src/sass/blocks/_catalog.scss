@@ -91,10 +91,11 @@
         }
         hr{
             width: 263px;
-            height: 4px;
+            
             margin-top: 17px;
             margin-bottom: 17px;
             color: #e8e8e8;
+            border-bottom: none;
         }
         &__footer{
             display: flex;

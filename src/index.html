@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse2</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
 
-
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,7 +32,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">Request a call</button>
+                    <button data-modal="consultation" class="button">Request a call</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -43,7 +43,7 @@
                     <div class="promo__icon"><img src="icons/bags1.png" alt="">Free shipping</div>
                     <div class="promo__icon"><img src="icons/messages.png" alt="">We will answer all questions</div>
                 </div>
-                <button class="button button__main">order a CONSULTATION</button>
+                <button data-modal="consultation" class="button button__main">order a CONSULTATION</button>
                 <div class="promo__link">
                     или
                     <a href="">GO TO CATALOG</a>
@@ -88,7 +88,7 @@
                 <input type="number" name="phone" required placeholder="your phone">
                 <input type="email" name="email" required placeholder="your email">
 
-                <button class="button button__submit">order a CONSULTATION</button>
+                <button data-modal="consultation" class="button button__submit">order a CONSULTATION</button>
             </form>
         </div>
     </div>
@@ -123,7 +123,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 1</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -150,7 +150,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 2</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -177,7 +177,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 3</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -204,7 +204,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 4</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -231,7 +231,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 5</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -258,7 +258,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content">
                             <img src="img/pulse_img1.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor 6</div>
                             <div class="catalog-item__descr">For your first steps in heart rate based training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
                         </div>
@@ -429,16 +429,58 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <!-- <div class="footer__map">
+    <!-- <footer class="footer">
 
-        </div> -->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4303078892863!2d37.64442107713408!3d55.76839799078943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20Russia%2C%20107078!5e0!3m2!1sen!2s!4v1695131883070!5m2!1sen!2s"
             width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="footer__info"></div>
-    </footer>
+        <div class="footer__info">
+            <address class="footer__addr">Moscow, Myasnitsky proezd, 3s1</address>
+            <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.png" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.png" alt="pinterest"></a>
+            </div>
+        </div>
+    </footer> -->
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">just fill out the application form</div>
+            <div class="modal__descr">we will call you back within 10 minutes</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input type="text" name="name" required placeholder="your name">
+                <input type="number" name="phone" required placeholder="your phone">
+                <input type="email" name="email" required placeholder="your email">
+
+                <button class="button button__submit">order a CONSULTATION</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order</div>
+            <div class="modal__descr">Polar FT1 heart rate monitor</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input type="text" name="name" required placeholder="your name">
+                <input type="number" name="phone" required placeholder="your phone">
+                <input type="email" name="email" required placeholder="your email">
+
+                <button class="button button__submit">buy now</button>
+            </form>
+        </div>
+        <div class="modal modal__mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank You for your order</div>
+            <div class="modal__descr">our manager will contact you soon</div>
+
+        </div>
+
+    </div>
+
+
 
 
 
