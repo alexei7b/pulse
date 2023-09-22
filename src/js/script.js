@@ -74,7 +74,113 @@ $(document).ready(function () {
         })
     });
 
+
+    // validation forms
+
+    // $('#consultation-form').validate({
+    //     rules: {
+    //         // simple rule, converted to {required:true}
+    //         name: {
+    //             required: true,
+    //             minlength: 5
+    //         },
+    //         phone: "required",
+
+    //         // compound rule
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Please specify your name",
+    //             minlength: jQuery.validator.format("At least {0} characters required!"),
+    //             phone: {
+    //                 required: "We need your phone number",
+    //                 phone: "Your phone must have digits"
+    //             },
+    //             email: {
+    //                 required: "We need your email address to contact you",
+    //                 email: "Your email address must be in the format of name@domain.com"
+    //             }
+    //         }
+    //     }
+    // });
+    // $('#consultation form').validate({
+    //     rules: {
+    //         // simple rule, converted to {required:true}
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //         },
+    //         phone: "required",
+
+    //         // compound rule
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Please specify your name",
+    //             minlength: jQuery.validator.format("At least {0} characters required!"),
+    //             phone: {
+    //                 required: "We need your phone number",
+    //                 phone: "Your phone must have digits"
+    //             },
+    //             email: {
+    //                 required: "We need your email address to contact you",
+    //                 email: "Your email address must be in the format of name@domain.com"
+    //             }
+    //         }
+    //     }
+    // });
+    // $('#order form').validate();
+
+    validateForm('#consultation-form');
+    validateForm('#consultation form');
+    validateForm('#order form');
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+
+                // compound rule
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please specify your name",
+                    minlength: jQuery.validator.format("At least {0} characters required!"),
+                    phone: {
+                        required: "We need your phone number",
+                        phone: "Your phone must have digits"
+                    },
+                    email: {
+                        required: "We need your email address to contact you",
+                        email: "Your email address must be in the format of name@domain.com"
+                    }
+                }
+            }
+        });
+    }
+
 });
+
+// mask input
+$('input[name=phone]').mask("+7 (999) 999-9999");
+
 
 // $(document).on("ready", function () {
 //     $('.carousel__inner').slick();

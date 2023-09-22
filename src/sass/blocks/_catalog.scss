@@ -165,7 +165,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            transform: translateX(-50%) translateX(- 19px);
             color: $main-color;
             text-align: center;
             font-size: 14px;

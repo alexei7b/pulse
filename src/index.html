@@ -83,12 +83,12 @@
             <div class="consultation__descr">Just fill out the application form and we will call you back within 10
                 minutes</div>
 
-            <form action="#" class="feed-form">
-                <input type="text" name="name" required placeholder="your name">
-                <input type="number" name="phone" required placeholder="your phone">
-                <input type="email" name="email" required placeholder="your email">
+            <form id="consultation-form" action="#" class="feed-form">
+                <input type="text" name="name" placeholder="your name">
+                <input name="phone" placeholder="your phone">
+                <input type="email" name="email" placeholder="your email">
 
-                <button data-modal="consultation" class="button button__submit">order a CONSULTATION</button>
+                <button class="button button__submit">order a CONSULTATION</button>
             </form>
         </div>
     </div>
@@ -452,7 +452,7 @@
             <div class="modal__descr">we will call you back within 10 minutes</div>
             <form action="#" class="feed-form feed-form_mt25">
                 <input type="text" name="name" required placeholder="your name">
-                <input type="number" name="phone" required placeholder="your phone">
+                <input name="phone" required placeholder="your phone">
                 <input type="email" name="email" required placeholder="your email">
 
                 <button class="button button__submit">order a CONSULTATION</button>
@@ -465,7 +465,7 @@
             <div class="modal__descr">Polar FT1 heart rate monitor</div>
             <form action="#" class="feed-form feed-form_mt25">
                 <input type="text" name="name" required placeholder="your name">
-                <input type="number" name="phone" required placeholder="your phone">
+                <input name="phone" required placeholder="your phone">
                 <input type="email" name="email" required placeholder="your email">
 
                 <button class="button button__submit">buy now</button>
@@ -487,18 +487,13 @@
 
 
 
-    <!--
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script> -->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
