@@ -32,11 +32,24 @@
         line-height: 18px;
         a{
             color: $main-color;
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: 18px;
-text-decoration-line: underline;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 18px;
+            text-decoration-line: underline;
         }
     }
+    &__icon{
+        color: red;
+        &-animated{
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }
+    
 }
