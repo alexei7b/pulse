@@ -6,8 +6,8 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
         responsive: [
             {
                 breakpoint: 992,
@@ -204,7 +204,6 @@ $(document).ready(function () {
     // Smooth scroll and pageup
 
     $(window).scroll(function () {
-        console.log($(this).scrollTop())
         if ($(this).scrollTop() > 1600) {
             $('.pageup').fadeIn();
         }
