@@ -204,6 +204,7 @@ $(document).ready(function () {
     // Smooth scroll and pageup
 
     $(window).scroll(function () {
+        console.log($(this).scrollTop())
         if ($(this).scrollTop() > 1600) {
             $('.pageup').fadeIn();
         }
